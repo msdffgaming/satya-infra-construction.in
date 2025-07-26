@@ -8,29 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%;
+    --foreground: 210 29% 24%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 29% 24%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 29% 24%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 56% 27%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 29% 24%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 50 100% 50%;
+    --accent-foreground: 210 29% 24%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+
+    /* Construction brand colors */
+    --construction-blue: 210 56% 27%;
+    --construction-yellow: 50 100% 50%;
+    --construction-yellow-dark: 45 100% 45%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--construction-blue)), hsl(var(--construction-blue) / 0.9));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--construction-yellow)), hsl(var(--construction-yellow-dark)));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(var(--construction-blue) / 0.1);
+    --shadow-button: 0 4px 14px 0 hsl(var(--construction-blue) / 0.25);
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
